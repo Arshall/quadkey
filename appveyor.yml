@@ -8,3 +8,11 @@ environment:
 build_script:
   - go vet ./...
   - gofmt -s -l .
+  
+artifacts:
+  - path: quadkey.zip
+    name: quadkey
+
+  - path: logs
+    name: test logs
+    type: zip
