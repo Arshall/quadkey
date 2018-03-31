@@ -1,0 +1,10 @@
+version: "{build}"
+
+environment:
+  GOPATH: c:\gopath
+  DEPTESTBYPASS501: 1
+  GOVERSION: 1.9
+  
+build_script:
+  - go vet ./...
+  - gofmt -s -l .
