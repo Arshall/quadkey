@@ -8,6 +8,7 @@ environment:
 build_script:
   - go vet ./...
   - gofmt -s -l .
+  - go install -v ./...
   
 artifacts:
   - path: quadkey.zip
