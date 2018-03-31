@@ -9,6 +9,7 @@ build_script:
   
 install:
 - set PATH=%GOPATH%\bin;c:\go\bin;%PATH%
+- go install
   
 artifacts:
   - path: quadkey.zip
